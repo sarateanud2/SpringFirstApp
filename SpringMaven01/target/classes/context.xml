@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="t1000" class="com.spring.study.robotconst.T1000">
+		<constructor-arg ref="sonyHead"></constructor-arg>
+		<constructor-arg ref="panasonicHand"></constructor-arg>
+		<constructor-arg ref="panasonicLeg"></constructor-arg>
+	</bean>
+	
+	<!-- Sony -->
+	<bean id="sonyLeg" class="com.spring.study.sony.SonyLeg"></bean>
+	<bean id="sonyHand" class="com.spring.study.sony.SonyHand"></bean>
+	<bean id="sonyHead" class="com.spring.study.sony.SonyHead"></bean>
+	
+	<!-- Panasonic -->
+	<bean id="panasonicLeg" class="com.spring.study.panasonic.PanasonicLeg"></bean>
+	<bean id="panasonicHand" class="com.spring.study.panasonic.PanasonicHand"></bean>
+	<bean id="panasonicHead" class="com.spring.study.panasonic.PanasonicHead"></bean>
+
+</beans>
